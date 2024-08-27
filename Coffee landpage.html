@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bliss</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #b2551a;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 33px;
+    margin: -7px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #b2551a;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Products Section */
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+.footer-section {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .products-section,
+    .about-section,
+    .contact-section {
+        padding: 20px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">Coffee Bliss</div>
+            <ul class="nav-links">
+                <li><a href="#About ">About us </a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#contact">Contact us </a></li>
+                
+                
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Experience the Finest Coffee</h1>
+            <p>Discover the rich flavors of our carefully selected coffee beans.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At Coffee Bliss, we believe in quality and flavor. Our beans are sourced from the best regions around the
+            world, roasted to perfection, and delivered fresh to your door.</p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.iuXuV3I1W9x3H6EVzOa8XwHaHa?rs=1&pid=ImgDetMain" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>A bold and rich experience.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.cQYK3Iza-CP0kFA2UsjIWQHaE8?rs=1&pid=ImgDetMain" alt="Latte">
+            <h3>Latte</h3>
+            <p>Creamy and smooth, perfect for any time of day.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.5PfGVLQsRT3GkPh57r-RogHaE8?rs=1&pid=ImgDetMain" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>A classic choice, with a perfect balance of milk and coffee.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer-section">
+        <p>&copy; 2024 Coffee Bliss. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
